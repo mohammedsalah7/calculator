@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chathura:wght@800&display=swap');
+
+*{
+  background-color: #E5E5E5;
+  font-family: Roboto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.calculator-body {
+  background-color: white;
+  border: 1px solid ;
+  width: 375px;
+  height: 812px;
+  position: relative;
+  top: 10px;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.control{
+  position: relative;
+  top: 10px;
+  background-color: white;
+}
+.result {
+  height: 60px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.result p {
+  font-size: 130px;
+  font-weight: normal;
+  font-style: normal;
+  margin: 5px;
+  float:right;
+  position: relative;
+  right: 50px;
+  background-color: white;
+  font-family: 'Chathura';
+
+}
+
+
+.button { 
+  width: 300px;
+  padding: 15px;
+  top: -15px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  left: 15px;
+  position: relative;
+  background-color: white;
+ 
+  
+}
+
+button {
+  position: relative;
+  top: -25px;
+  left: 10px;
+  width:64px;
+  height: 66px;
+  font-size: 36px;
+  border-radius: 50%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  background: #212638;
   color: white;
+  margin-top: 10px;
+  border: unset;
+}
+.zero{
+  width: 148px;
+  border-radius: 34px;
 }
 
-.App-link {
-  color: #61dafb;
+.number{
+  background-color:#212638 ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.operation{
+  background-color: #8490FF;
+}
+.operation1{
+  background-color:  #34509E;
+}
+.other{
+  color: #212638;
+  font-size: 26px;
 }
